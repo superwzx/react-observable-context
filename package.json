@@ -1,0 +1,23 @@
+{
+  "name": "react-observable-context",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superwzx/react-observable-context.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/superwzx/react-observable-context/issues"
+  },
+  "homepage": "https://github.com/superwzx/react-observable-context#readme",
+  "dependencies": {
+    "observable": "git+https://github.com/Scoliid/observable.git",
+    "react": "^16.9.0"
+  }
+}
