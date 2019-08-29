@@ -5,7 +5,10 @@ import objectArrayToObject from './utils/objectArrayToObject';
 
 
 class ContextProvider extends React.Component {
-    state = objectArrayToObject(contexts);
+    constructor(props) {
+        super(props);
+        this.state = objectArrayToObject(contexts);
+    }
 
     componentDidMount() {
         contexts.forEach(({name, observable}) => {
