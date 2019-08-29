@@ -34,7 +34,7 @@ module.exports = {
 		path: path.resolve(__dirname, 'dist')
 	},
 
-	plugins: [new webpack.ProgressPlugin(), new HtmlWebpackPlugin({template: 'index.html'})],
+	plugins: [new HtmlWebpackPlugin({template: 'index.html'})],
 
 	module: {
 		rules: [

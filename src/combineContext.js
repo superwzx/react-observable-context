@@ -1,10 +1,9 @@
 
-export const contexts = [];
+export const contexts = {};
 
-const combineContext = (context) => {
-    const name = Object.keys(context)[0];
-    const observable = context[name];
-    contexts.push({[name]: observable});
+const combineContext = (contextList) => {
+    Object.assign(contexts, ...contextList);
+    return contexts;
 };
 
 export default combineContext;

@@ -2,7 +2,6 @@ import React from 'react';
 import ReactObservableContext from './context';
 
 const connect = (mapContextToProps) => {
-
     return function(Component) {
         return (
             <ReactObservableContext.Consumer>
@@ -16,6 +15,6 @@ const connect = (mapContextToProps) => {
             </ReactObservableContext.Consumer>
         )
     }
-}
+};
 
 export default connect;

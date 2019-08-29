@@ -1,23 +1,24 @@
 import React from 'react';
 import ReactObservableContext from './context';
 import {contexts} from "./combineContext";
-import objectArrayToObject from './utils/objectArrayToObject';
-
 
 class ContextProvider extends React.Component {
     constructor(props) {
         super(props);
-        this.state = objectArrayToObject(contexts);
+        this.state = {
+            updater: Date.now(),
+            ...props.state
+        };
     }
 
     componentDidMount() {
-        contexts.forEach(({name, observable}) => {
-            observable.subscribe(() => {
+        for (let i in contexts) {
+            contexts[i].subscribe(() => {
                 this.setState({
-                    [name]: observable
+                    [i]: contexts[i]
                 })
             })
-        })
+        }
     }
 
     render() {
