@@ -1,7 +1,7 @@
 {
   "name": "react-observable-context",
-  "version": "1.0.0",
-  "description": "My webpack project",
+  "version": "1.0.1",
+  "description": "react observable context, for state manage.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/superwzx/react-observable-context.git"
+    "url": "https://github.com/superwzx/react-observable-context.git"
   },
   "author": "",
   "license": "ISC",
@@ -19,9 +19,7 @@
   },
   "homepage": "https://github.com/superwzx/react-observable-context#readme",
   "dependencies": {
-    "observable": "git+https://github.com/Scoliid/observable.git",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "observable": "https://github.com/Scoliid/observable.git"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
@@ -38,6 +36,12 @@
     "style-loader": "^1.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7",
-    "webpack-dev-server": "^3.8.0"
+    "webpack-dev-server": "^3.8.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   }
 }
