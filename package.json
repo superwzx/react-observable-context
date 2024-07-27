@@ -1,6 +1,6 @@
 {
   "name": "@wangangngg/react-observable-context",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "react observable context, for state manage.",
   "files": [
     "dist"

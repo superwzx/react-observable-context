@@ -15,7 +15,7 @@ const Family = () => (
 )
 
 const Person = (props) => {
-  const { ha } = useObservableSelector((state) => state);
+  const ha = useObservableSelector((state) => state.ha);
   const handleClick = (ha) => {
     const newVal = ha() + 1;
     ha(newVal);

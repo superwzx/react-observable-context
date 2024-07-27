@@ -3,6 +3,6 @@ import ReactObservableContext from './context';
 
 export const useObservableSelector = (selector) => {
   const state = useContext(ReactObservableContext);
-  const [selectedState, setSelectedState] = useState(selector(state));
+  const [selectedState] = useState(() => selector(state));
   return selectedState;
 };
